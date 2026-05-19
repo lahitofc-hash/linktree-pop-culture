@@ -648,7 +648,7 @@ const SocialLink = ({ link, themeColor }: any) => {
 // ============================================================
 // 🏠 COMPONENTE PRINCIPAL
 // ============================================================
-export default function PopCulturePage() {
+export default function Home() {
   const [mainItems, setMainItems] = useState<any[]>([]);
   const [streamingLinks, setStreamingLinks] = useState<any[]>([]);
   const [socialLinks, setSocialLinks] = useState<any[]>([]);
