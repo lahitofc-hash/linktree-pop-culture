@@ -786,7 +786,11 @@ export default function Home() {
       </div>
 
       {socialLinks.length > 0 && (
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className={`fixed bottom-0 left-0 right-0 z-20 transition-all duration-500 ${scrolled ? "bg-black/90 backdrop-blur-xl border-t border-white/5" : "bg-transparent"}`}>
+        <motion.div 
+  initial={{ opacity: 0, y: 20 }} 
+  animate={{ opacity: 1, y: 0 }} 
+  className={`fixed bottom-0 left-0 right-0 z-20 transition-all duration-500 ${scrolled ? "bg-black/90 backdrop-blur-xl border-t border-white/5" : "bg-black/40 backdrop-blur-sm"}`}
+>
           <div className="max-w-md mx-auto px-6 py-4">
             <div className="flex justify-center gap-6 flex-wrap">{socialLinks.map((link, index) => <SocialLink key={index} link={link} themeColor={themeColor} />)}</div>
             <div className="w-24 h-0.5 rounded-full mx-auto mt-4" style={{ background: `linear-gradient(to right, ${themeColor}, ${highlightColor}, ${themeColor})` }} />
