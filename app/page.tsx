@@ -616,7 +616,7 @@ const PopCard = ({ item, themeColor, highlightColor }: any) => {
 // 🎵 STREAMING CARD
 // ============================================================
 const StreamingCard = ({ platform, url, themeColor }: any) => {
-  const icons: any = { spotify: Icons.Music, youtube: Icons.Youtube, apple: Icons.Apple, soundcloud: Icons.Cloud, tidal: Icons.Waves, deezer: Icons.Headphones, amazon: Icons.ShoppingBag };
+  const icons: any = { spotify: Icons.Music, youtube: Icons.YoutubeIcon, apple: Icons.Apple, soundcloud: Icons.Cloud, tidal: Icons.Waves, deezer: Icons.Headphones, amazon: Icons.ShoppingBag };
   const colors: any = { spotify: "#1DB954", youtube: "#FF0000", apple: "#FA2B5E", soundcloud: "#FF5500", tidal: "#000000", deezer: "#A238FF", amazon: "#FF9900" };
   const Icon = icons[platform?.toLowerCase()] || Icons.PlayCircle;
   const platformColor = colors[platform?.toLowerCase()] || themeColor;
